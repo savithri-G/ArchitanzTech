@@ -1,38 +1,209 @@
-.App {
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  background: #fff;
+  box-shadow: 3px 3px 10px 2px black;
+}
+
+.header .logo img {
+  width: 200px;
+}
+
+.header .navbar a {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  color: #000;
+  text-decoration: none;
+}
+.header .navbar a.active{
+  border-bottom:3px solid rgb(153, 49, 238);
+  
+}
+.header .navbar a:hover {
+  color: rgb(153, 49, 238);
+  font-size: 1.4rem;
+  
+}
+
+.header .icons div {
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: .5rem;
+  background: #eee;
+  color: #000;
+  font-size: 1.5rem;
+  margin-left: .3rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header .icons div:hover {
+  background: rgb(153, 49, 238);
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#menu-btn {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .phone {
+  position: absolute;
+  top: 110%;
+  right: 0%;
+  width: 20rem;
+  height: 2.5rem;
+  background: #dacece88;
+  border-radius: .5rem;
+  font-weight: bold;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  right: 1rem;
+  transition: .4s ease-in;
+}
+.phone p{
+  text-align: center;
+  margin-top: 15px;
+}
+.header .phone a{
+  text-decoration: none;
+  color: #000;
+
+}
+.header .phone:hover {
+  background-color: rgb(153, 49, 238);
+  color: #fff;
+}
+.header .phone a:hover{
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media query */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .header .search-from {
+    width: 90%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    width: 25rem;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: .5rem;
+    background: #fff;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: .4s linear;
+
+  }
+
+  .header .navbar a {
+    margin: 1rem;
+    display: block;
+    text-align: center;
+    background-color: rgb(26, 101, 241);
+    width: 50%;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 700;
+    font-family:"Roboto", sans-serif;
+    font-size: 30px; 
+   }
+  .header .navbar a:hover {
+    background: rgb(153, 49, 238);
+    color: #fff;
+    width: 80%;
+  }
+
+  .navbar {
+    display: none;
+    width: 30%;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .fas.fa-bars {
+    display: block;
+  }
+.phone {
+  margin-top: 5px;
+}
+}
+@media (max-width: 1102px)  {
+  .header .navbar a
+  {
+    font-size: .8rem;
+  }
+} 
+
+@media  (max-width:950px) {
+  .header .navbar a
+  {
+    font-size: .8rem;
+  }
+  .header .navbar a:hover{
+    font-size: 1rem;
+  }
+  .header .icons{
+    padding: 5px;
+  }
+  .header .icons div {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 2px;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    margin-left: .1rem;
+    text-align: center;
+  }
+}
+@media (max-width:863px){
+  .header .navbar a
+  {
+    font-size: .5rem;
+  }
+  .header .navbar a:hover
+  {
+    font-size: .55rem;
+  }
+  .header .icons div {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    margin-left: .1rem;
+    text-align: center;
   }
 }

@@ -1,0 +1,78 @@
+.cont {
+  width: 100%;
+}
+
+.iconic {
+  width: 50px;
+}
+.no-resize{
+  resize: none;
+}
+.getTouch {
+  color: rgb(153, 49, 238);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.location p {
+  padding: 5px 20px;
+  line-height: 2;
+}
+.location .icone{
+  color: rgb(118, 109, 126);
+}
+.contbox {
+  padding: 5px 10px;
+}
+
+.contboxIns {
+  padding: 10px 5px;
+}
+
+.contBtn {
+  max-width: 30%;
+  padding: 10px 30px;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  background-color: rgb(26, 101, 241);
+  font-weight: bold;
+}
+
+.contBtn:hover {
+  background-color: rgb(153, 49, 238);
+  border: none;
+  box-shadow: 1px 1px 5px 3px rgb(153, 49, 238);
+}
+.AZMap{
+  width: 100%;
+  height: 450px;
+  box-shadow: 2px 2px 5px 2px black;
+  /* outline: 2px dashed rgb(26, 101, 241); */
+}
+
+@media (max-width:1024px) {
+  .location p {
+    padding: 5px 10px;
+    line-height: 2;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:769px) {
+  .location {
+    padding-top: 50px;
+
+  }
+
+  .location p {
+    font-size: 15px;
+  }
+}
+
+@media  (max-width:950px) {
+  .Contact-container video{
+    margin-top: -8px;
+  }
+} 

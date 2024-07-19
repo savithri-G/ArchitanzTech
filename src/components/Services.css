@@ -1,0 +1,119 @@
+.Services-container img{
+    width: 100%;
+}
+.ServiceHead h2{
+    background-color:rgb(26, 101, 241);
+    color: white;
+    text-align: center;
+    /* width: 25%; */
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.ServiceHead h2:hover{
+    background-color: rgb(153, 49, 238);
+}
+.ServiceHead h3{
+    font-size: 40px;
+    width: 50%;
+    color: #071952;
+    margin-left: 25%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.Service-box-container{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Service-box-container .ServiceBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    height: 90%;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius:5rem;
+    text-align: center;
+    margin: 1rem 0;
+    transition: outline-offset 0.2s;    
+
+}
+.Service-box-container .ServiceBox:hover{
+    outline: .2rem solid rgba(0, 0, 0, .5);
+    outline-offset: -1;
+    transition: all .2s ease-in-out;
+}
+
+.Service-box-container .ServiceBox h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    /* color: #071952; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    background-image: linear-gradient(to right, rgb(26, 101, 241), rgb(153, 49, 238));
+    background-clip: text;
+    color: transparent;
+}
+.Service-box-container .ServiceBox p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem 0;
+    flex-grow: 1;
+
+}
+.ServiceBox .btn{
+    padding: 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    transition: background-color 0.2s, color 0.2s, outline 0.2s;
+        /* align-self: center;
+        padding: 20px 20px;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        display: flex; */
+        
+    }
+.ServiceBox .btn:hover{
+    background-color: rgb(153, 49, 238);
+    color: #ffffff;
+    /* transition: .2s ease-in-out;  */
+    outline: 2px solid rgb(153, 49, 238);
+}
+.ServiceBox a{
+    font-weight:bolder;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media  (max-width:950px) {
+    .Services-container video{
+      margin-top: -8px;
+    }
+    .ServiceHead h3{
+        font-size:30px;
+        width: 100%;
+        margin-left: 3%;
+    }
+  }

@@ -1,0 +1,154 @@
+
+.image-container {
+    position: relative;
+    /* width: 100%;
+    margin: auto; */
+}
+
+/* .background-image {
+    width: 100%;
+    height: auto;
+} */
+
+.overlay {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -45%);
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    padding: 30px;
+    line-height: 70px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* Optional: to make text background slightly transparent */
+}
+.heading{
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2.5rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  color: #000;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.heading span{
+  /* background: rgb(153, 49, 238); */
+  background:linear-gradient(to bottom,rgb(26, 101, 241),rgb(153, 49, 238));
+  color: #fff;
+  display: inline-block;
+  padding:.2rem 2rem;
+}
+
+.images-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+.imagess-container {
+    position: relative;
+    display: inline-block;
+    flex: 1 1 48%;
+    margin: 10px;
+    width: 48%; /* Adjust the width as needed */
+  }
+  
+  .background {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 48, 49, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .imagess-container:hover .overlayText {
+    opacity: 1;
+  }
+  .overlayText span{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  @media (max-width:900px) and (min-width:750px){
+    .overlay {
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 30px;
+        line-height: 35px;
+}
+}
+@media (max-width:1024px){
+    .overlay {
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        transform: translate(-50%, -40%);
+        color: white;
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 30px;
+        line-height: 50px;
+}
+}
+@media (max-width:700px) and (min-width:500px){
+    .overlay {
+        position: absolute;
+        top: 55%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: left;
+        font-size: 1rem;
+        padding: 30px;
+        line-height: 30px;
+}
+
+}
+@media (max-width: 768px) {
+    .imagess-container {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    .overlayText span{
+        font-size: 15px;
+    }
+    .what h2{
+        font-size: 15px;
+        padding: 10px auto;
+    
+    }
+  }
+  @media (max-width: 850px){
+    .what h2{
+        font-size: 15px;
+        padding: 10px 10px;
+    
+    }
+  }
+  @media  (max-width:950px) {
+    .image-container video{
+      margin-top: -8px;
+    }
+  }

@@ -1,0 +1,76 @@
+
+.aboutOver p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+}
+.aboutOver h3{
+    font-size: 40px;
+    width: 60%;
+    color: #071952;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 20%;
+    text-align: center;
+}
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:.5rem;
+}
+.categories .box-container .box{
+    padding: 3rem 2rem;
+    border-radius: 5rem;
+    background: #ffffff;
+    height: 500px;
+    outline: .1rem solid #071952;
+    /* outline: .1rem solid rgba(0, 0, 0, .1); */
+    outline-offset: -1rem;
+    text-align: center;
+    /* box-shadow: .2rem solid rgba(0, 0, 0, .1); */
+}  
+.categories .box-container .box:hover{
+    outline: .1rem solid rgba(0, 0, 0, 1);
+    outline-offset: 0rem;
+} 
+.categories .box-container .box img{
+    margin: 1rem 0;
+    min-height: 5rem;
+}
+.categories .box-container .box h3{
+    font-size: 2rem;
+    color: #071952;
+    line-height: 1.8;
+    
+}
+.categories .box-container .box p{
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    padding: .5rem 1rem;
+    text-align:justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.AboutIco
+{
+    width: 80px;
+    height: 80px;
+}
+
+
+@media  (max-width:950px) {
+    .about-container video{
+      margin-top: -8px;
+    }
+    .aboutOver h3{
+        font-size:30px;
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }

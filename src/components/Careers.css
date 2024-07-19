@@ -1,0 +1,91 @@
+.Careers-container img{
+    width:80%;
+    box-sizing: border-box;
+    margin-left: 120px;
+}
+.card {
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    /* color: #007bff; */
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(26, 101, 241), rgb(153, 49, 238));
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .card-text {
+    font-size: 1.2em;
+  }
+  
+  .list-group-item {
+    font-size: 1em;
+  }
+  .list-group-item:hover{
+    font-size: larger;
+  }
+   /* h5:hover{
+   
+    background-image: linear-gradient(to right, rgb(26, 101, 241), rgb(153, 49, 238));
+    background-clip: text;
+    color: transparent;
+  } */
+
+.form-group{
+    padding: 0px 10px;
+}
+.carCont{
+  margin-top: 100px;
+}
+.carForm{
+  padding: 10px 20px;
+}
+.form-control{
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: none;
+}
+.sele option[value=""]{
+  color: rgb(156, 151, 151);
+}
+
+.btn-block{
+    margin-top: 10px;
+    font-weight: bold;
+    float: right;
+}
+.noResize{
+  resize: none;
+  
+}
+
+.btn-block:hover{
+    background-color: rgb(153, 49, 238);
+    border: none;
+    box-shadow: 1px 1px 5px 3px rgb(153, 49, 238);
+}
+.career-form-container {
+    /* background-image: url('/src/img/hero/IT_Solution.jpeg'); */
+    background-image: url('/src/images/GetInTouch.png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media  (max-width:950px) {
+    .Careers-container video{
+      margin-top: -8px;
+    }
+  } 
