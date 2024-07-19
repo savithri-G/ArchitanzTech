@@ -48,7 +48,7 @@ const Footer = () => {
           <i class="fa-solid fa-envelope-open-text"></i>
           </a>
         </div>
-        <p className="mb-0 copy" >&copy; 2024 <a href="https://www.architanz.com" target="_blank" class="site">
+        <p className="mb-0 copy" >&copy; 2024 <a href="/Home" className='site'>
         www.architanz.com.</a> All rights reserved | Architanz Technologies.</p>
         <div className="scroll">
           <img src={scroll} alt="scroll" onClick= {handleScrollToTop} />
