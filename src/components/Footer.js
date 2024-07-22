@@ -44,7 +44,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com" className="me-4 ico">
             <FaLinkedin />
           </a>
-          <a href="#" className="news ico" id="news-btn"  onClick= {handleNewsClick}>
+          <a href="news" className="news ico" id="news-btn"  onClick= {handleNewsClick}>
           <i class="fa-solid fa-envelope-open-text"></i>
           </a>
         </div>

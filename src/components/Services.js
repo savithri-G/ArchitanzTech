@@ -28,7 +28,7 @@ const Services = () => {
                 <p>We bring rich and soft blended experience in information technology, 
                     customer service and global operations by continuously combining our 
                     strategic thinking with the best in Technology, People, and Process.</p>
-                <a href="#" class="btn">View More</a>
+                <a href="/Services" class="btn">View More</a>
             </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -37,7 +37,7 @@ const Services = () => {
                 <p>Our infrastructure services ensure seamless operations, combining advanced 
                     technology with reliable infrastructure management solutions for sustained 
                     business success and growth.</p>
-                <a href="#" class="btn">View More</a>
+                <a href="/Services" class="btn">View More</a>
             </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -46,7 +46,7 @@ const Services = () => {
                 <p>We offer expert talent management services, leveraging our deep industry 
                     knowledge and innovative strategies to help businesses build high-performing
                      teams and drive organizational success.</p>
-                <a href="#" class="btn ">View More</a>
+                <a href="/Services" class="btn ">View More</a>
             </div>
             </div>
             </div>
